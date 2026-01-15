@@ -12,9 +12,9 @@ const {
   deleteTask
 } = require("../../controllers/task.controller");
 
-router.post("/", authenticate, createTask);               // user/admin
-router.get("/my", authenticate, getMyTasks);               // user
-router.get("/admin/all",authenticate, authorizeAdmin, role("admin"), getAllTasks); // admin
-router.delete("/:id",authenticate, authorizeAdmin, role("admin"), deleteTask);     // admin
+router.post("/", authenticate, createTask);               
+router.get("/my", authenticate, getMyTasks);               
+router.get("/admin/all",authenticate, authorizeAdmin, role("admin"), getAllTasks); 
+router.delete("/:id",authenticate, authorizeAdmin, role("admin"), deleteTask);     
 
 module.exports = router;

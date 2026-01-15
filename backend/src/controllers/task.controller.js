@@ -10,7 +10,7 @@ const createTask = async (req, res) => {
 
     const task = await Task.create({
       title,
-      user: req.user.userId   // 🔥 THIS WAS MISSING
+      user: req.user.userId   
     });
 
     res.status(201).json(task);

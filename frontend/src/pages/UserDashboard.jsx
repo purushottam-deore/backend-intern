@@ -42,7 +42,7 @@ const UserDashboard = ({ setLoggedIn }) => {
 
     try {
       const res = await createTask({ title });
-      setTasks((prev) => [...prev, res.data]); // add new task
+      setTasks((prev) => [...prev, res.data]); 
       setTitle("");
     } catch (err) {
       console.error(err);
