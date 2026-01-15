@@ -21,8 +21,7 @@ Backend API for managing user authentication and tasks with role-based access (u
 
 1. Clone repo:
 ```bash
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+git clone https://github.com/purushottam-deore/backend-intern.git
 ```
 2. Install dependencies:
 npm install
